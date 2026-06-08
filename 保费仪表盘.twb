@@ -1,0 +1,1648 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='insurance_updated' inline='true' name='federated.1biaek01os7czf1fg9z9n1uf2x5t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='insurance_updated' name='textscan.0472myr0pbzn3z1gji0q706f319z'>
+            <connection class='textscan' directory='D:/Rotten Star/Videos' filename='insurance_updated.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0472myr0pbzn3z1gji0q706f319z' name='insurance_updated.csv' table='[insurance_updated#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='string' name='CustomerID' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='年龄' ordinal='2' />
+            <column datatype='string' name='性别' ordinal='3' />
+            <column datatype='real' name='bmi' ordinal='4' />
+            <column datatype='integer' name='是否儿童' ordinal='5' />
+            <column datatype='string' name='是否吸烟' ordinal='6' />
+            <column datatype='string' name='地区' ordinal='7' />
+            <column datatype='string' name='评级' ordinal='8' />
+            <column datatype='real' name='保费金额' ordinal='9' />
+            <column datatype='real' name='BMI_Penalty' ordinal='10' />
+            <column datatype='string' name='Age_Bucket' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CustomerID]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>CustomerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>年龄</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[年龄]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>年龄</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>性别</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[性别]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>性别</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bmi]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>bmi</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>是否儿童</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[是否儿童]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>是否儿童</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>是否吸烟</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[是否吸烟]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>是否吸烟</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>地区</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[地区]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>地区</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评级</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[评级]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>评级</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>保费金额</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[保费金额]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>保费金额</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BMI_Penalty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BMI_Penalty]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>BMI_Penalty</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age_Bucket</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age_Bucket]</local-name>
+            <parent-name>[insurance_updated.csv]</parent-name>
+            <remote-alias>Age_Bucket</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Bucket' datatype='string' name='[Age_Bucket]' role='dimension' type='nominal' />
+      <column caption='BMI Penalty' datatype='real' name='[BMI_Penalty]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[CustomerID]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='insurance_updated.csv' datatype='table' name='[__tableau_internal_object_id__].[insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223]' role='measure' type='quantitative' />
+      <column caption='Bmi' datatype='real' name='[bmi]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[年龄]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='insurance_updated.csv' id='insurance_updated.csv_88A8393A17994014B4FEF29A3B2F9223'>
+            <properties context=''>
+              <relation connection='textscan.0472myr0pbzn3z1gji0q706f319z' name='insurance_updated.csv' table='[insurance_updated#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='CustomerID' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='integer' name='年龄' ordinal='2' />
+                  <column datatype='string' name='性别' ordinal='3' />
+                  <column datatype='real' name='bmi' ordinal='4' />
+                  <column datatype='integer' name='是否儿童' ordinal='5' />
+                  <column datatype='string' name='是否吸烟' ordinal='6' />
+                  <column datatype='string' name='地区' ordinal='7' />
+                  <column datatype='string' name='评级' ordinal='8' />
+                  <column datatype='real' name='保费金额' ordinal='9' />
+                  <column datatype='real' name='BMI_Penalty' ordinal='10' />
+                  <column datatype='string' name='Age_Bucket' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='insurance.csv+ (多个连接)' inline='true' name='federated.0o03kkp1jif1f910lz69y10qe9ww' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='insurance' name='textscan.0s0fe0711e2j2s1bdrdg01ksuutx'>
+            <connection class='textscan' directory='D:/Rotten Star/Videos' filename='insurance.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='insurance2' name='textscan.0qgrlmv1shg9nt14bb43o1pphklj'>
+            <connection class='textscan' directory='D:/Rotten Star/Videos' filename='insurance2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='insurance_updated.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='string' name='CustomerID' />
+            <column datatype='integer' name='Year' />
+            <column datatype='integer' name='年龄' />
+            <column datatype='string' name='性别' />
+            <column datatype='real' name='bmi' />
+            <column datatype='integer' name='是否儿童' />
+            <column datatype='string' name='是否吸烟' />
+            <column datatype='string' name='地区' />
+            <column datatype='string' name='评级' />
+            <column datatype='real' name='保费金额' />
+            <column datatype='real' name='BMI_Penalty' />
+            <column datatype='string' name='Age_Bucket' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.0s0fe0711e2j2s1bdrdg01ksuutx' name='insurance_updated.csv' table='[insurance_updated#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='string' name='CustomerID' ordinal='0' />
+              <column datatype='integer' name='Year' ordinal='1' />
+              <column datatype='integer' name='年龄' ordinal='2' />
+              <column datatype='string' name='性别' ordinal='3' />
+              <column datatype='real' name='bmi' ordinal='4' />
+              <column datatype='integer' name='是否儿童' ordinal='5' />
+              <column datatype='string' name='是否吸烟' ordinal='6' />
+              <column datatype='string' name='地区' ordinal='7' />
+              <column datatype='string' name='评级' ordinal='8' />
+              <column datatype='real' name='保费金额' ordinal='9' />
+              <column datatype='real' name='BMI_Penalty' ordinal='10' />
+              <column datatype='string' name='Age_Bucket' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0s0fe0711e2j2s1bdrdg01ksuutx' name='insurance2_updated.csv' table='[insurance2_updated#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='string' name='CustomerID' ordinal='0' />
+              <column datatype='integer' name='Year' ordinal='1' />
+              <column datatype='integer' name='年龄' ordinal='2' />
+              <column datatype='string' name='性别' ordinal='3' />
+              <column datatype='real' name='bmi' ordinal='4' />
+              <column datatype='integer' name='是否儿童' ordinal='5' />
+              <column datatype='string' name='是否吸烟' ordinal='6' />
+              <column datatype='string' name='地区' ordinal='7' />
+              <column datatype='string' name='评级' ordinal='8' />
+              <column datatype='real' name='保费金额' ordinal='9' />
+              <column datatype='real' name='BMI_Penalty' ordinal='10' />
+              <column datatype='string' name='Age_Bucket' ordinal='11' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CustomerID]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>CustomerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>年龄</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[年龄]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>年龄</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>性别</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[性别]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>性别</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bmi]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>bmi</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>是否儿童</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[是否儿童]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>是否儿童</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>是否吸烟</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[是否吸烟]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>是否吸烟</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>地区</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[地区]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>地区</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评级</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[评级]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>评级</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>保费金额</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[保费金额]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>保费金额</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BMI_Penalty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BMI_Penalty]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>BMI_Penalty</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age_Bucket</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age_Bucket]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>Age_Bucket</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[insurance_updated.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age（数据桶）' datatype='string' name='[Age_Bucket]' role='dimension' type='nominal' />
+      <column caption='BMI惩罚系数' datatype='real' name='[BMI_Penalty]' role='measure' type='quantitative' />
+      <column caption='insurance_updated.csv' datatype='table' name='[__tableau_internal_object_id__].[insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A]' role='measure' type='quantitative' />
+      <column caption='Bmi' datatype='real' name='[bmi]' role='measure' type='quantitative' />
+      <column caption='地区1' datatype='string' name='[地区]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[年龄]' role='dimension' type='quantitative' />
+      <column caption='是否吸烟1' datatype='string' name='[是否吸烟]' role='dimension' type='nominal' />
+      <column caption='评分' datatype='string' name='[评级 - 拆分 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0o03kkp1jif1f910lz69y10qe9ww].[评级]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [评级], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='等级' datatype='string' name='[评级 - 拆分 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0o03kkp1jif1f910lz69y10qe9ww].[评级]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [评级], &quot;,&quot;, 2 ) )' />
+      </column>
+      <group caption='操作(地区)' hidden='true' name='[Action (地区)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[地区]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='insurance_updated.csv' id='insurance_updated.csv_A7AF51C1C50F41219E9020B51434E72A'>
+            <properties context=''>
+              <relation all='true' name='insurance_updated.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='CustomerID' />
+                  <column datatype='integer' name='Year' />
+                  <column datatype='integer' name='年龄' />
+                  <column datatype='string' name='性别' />
+                  <column datatype='real' name='bmi' />
+                  <column datatype='integer' name='是否儿童' />
+                  <column datatype='string' name='是否吸烟' />
+                  <column datatype='string' name='地区' />
+                  <column datatype='string' name='评级' />
+                  <column datatype='real' name='保费金额' />
+                  <column datatype='real' name='BMI_Penalty' />
+                  <column datatype='string' name='Age_Bucket' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.0s0fe0711e2j2s1bdrdg01ksuutx' name='insurance_updated.csv' table='[insurance_updated#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                    <column datatype='string' name='CustomerID' ordinal='0' />
+                    <column datatype='integer' name='Year' ordinal='1' />
+                    <column datatype='integer' name='年龄' ordinal='2' />
+                    <column datatype='string' name='性别' ordinal='3' />
+                    <column datatype='real' name='bmi' ordinal='4' />
+                    <column datatype='integer' name='是否儿童' ordinal='5' />
+                    <column datatype='string' name='是否吸烟' ordinal='6' />
+                    <column datatype='string' name='地区' ordinal='7' />
+                    <column datatype='string' name='评级' ordinal='8' />
+                    <column datatype='real' name='保费金额' ordinal='9' />
+                    <column datatype='real' name='BMI_Penalty' ordinal='10' />
+                    <column datatype='string' name='Age_Bucket' ordinal='11' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0s0fe0711e2j2s1bdrdg01ksuutx' name='insurance2_updated.csv' table='[insurance2_updated#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                    <column datatype='string' name='CustomerID' ordinal='0' />
+                    <column datatype='integer' name='Year' ordinal='1' />
+                    <column datatype='integer' name='年龄' ordinal='2' />
+                    <column datatype='string' name='性别' ordinal='3' />
+                    <column datatype='real' name='bmi' ordinal='4' />
+                    <column datatype='integer' name='是否儿童' ordinal='5' />
+                    <column datatype='string' name='是否吸烟' ordinal='6' />
+                    <column datatype='string' name='地区' ordinal='7' />
+                    <column datatype='string' name='评级' ordinal='8' />
+                    <column datatype='real' name='保费金额' ordinal='9' />
+                    <column datatype='real' name='BMI_Penalty' ordinal='10' />
+                    <column datatype='string' name='Age_Bucket' ordinal='11' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='筛选器 1 (已生成)' name='[Action1_20CFE90687B04F10BD3510CB5E3F27CF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='仪表板' type='sheet' worksheet='保费金额占比' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='仪表板' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='保费统计表'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='微软雅黑' fontsize='22'>各地区保费统计表</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance.csv+ (多个连接)' name='federated.0o03kkp1jif1f910lz69y10qe9ww' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o03kkp1jif1f910lz69y10qe9ww'>
+            <column caption='BMI惩罚系数' datatype='real' name='[BMI_Penalty]' role='measure' type='quantitative' />
+            <column-instance column='[bmi]' derivation='Avg' name='[avg:bmi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[年龄]' derivation='Avg' name='[avg:年龄:qk]' pivot='key' type='quantitative' />
+            <column caption='Bmi' datatype='real' name='[bmi]' role='measure' type='quantitative' />
+            <column-instance column='[是否吸烟]' derivation='Count' name='[cnt:是否吸烟:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[地区]' derivation='None' name='[none:地区:nk]' pivot='key' type='nominal' />
+            <column-instance column='[是否吸烟]' derivation='None' name='[none:是否吸烟:nk]' pivot='key' type='nominal' />
+            <column-instance column='[保费金额]' derivation='Sum' name='[pcdf:sum:保费金额:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Columns' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[保费金额]' derivation='Sum' name='[pcto:sum:保费金额:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[BMI_Penalty]' derivation='Sum' name='[sum:BMI_Penalty:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[保费金额]' derivation='Sum' name='[sum:保费金额:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[保费金额]' role='measure' type='quantitative' />
+            <column caption='地区1' datatype='string' name='[地区]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[年龄]' role='dimension' type='quantitative' />
+            <column caption='是否吸烟1' datatype='string' name='[是否吸烟]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[pcdf:sum:保费金额:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[pcto:sum:保费金额:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[avg:bmi:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[avg:年龄:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[cnt:是否吸烟:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:BMI_Penalty:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[pcdf:sum:保费金额:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[pcto:sum:保费金额:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[avg:bmi:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[avg:年龄:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o03kkp1jif1f910lz69y10qe9ww].[cnt:是否吸烟:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[Action (地区)]'>
+            <groupfilter function='level-members' level='[地区]' user:ui-action-filter='[Action1_20CFE90687B04F10BD3510CB5E3F27CF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:地区:nk]' direction='DESC' using='[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]' />
+          <filter class='categorical' column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]'>
+            <groupfilter function='level-members' level='[none:是否吸烟:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0o03kkp1jif1f910lz69y10qe9ww].[:Measure Names]</column>
+            <column>[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]</column>
+            <column>[federated.0o03kkp1jif1f910lz69y10qe9ww].[Action (地区)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0o03kkp1jif1f910lz69y10qe9ww].[:Measure Names]' value='168' />
+            <format attr='height' field='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:地区:nk]' value='45' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0o03kkp1jif1f910lz69y10qe9ww].[:Measure Names]' value='88' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffff00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:地区:nk]</rows>
+        <cols>[federated.0o03kkp1jif1f910lz69y10qe9ww].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0E5BCCB9-BA17-4B6E-BA4F-6FA92A2E68A6}' />
+    </worksheet>
+    <worksheet name='保费金额占比'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='微软雅黑' fontsize='22'>各地区保费金额合计百分比</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance.csv+ (多个连接)' name='federated.0o03kkp1jif1f910lz69y10qe9ww' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o03kkp1jif1f910lz69y10qe9ww'>
+            <column-instance column='[地区]' derivation='None' name='[none:地区:nk]' pivot='key' type='nominal' />
+            <column-instance column='[保费金额]' derivation='Sum' name='[pcto:sum:保费金额:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[保费金额]' derivation='Sum' name='[sum:保费金额:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[保费金额]' role='measure' type='quantitative' />
+            <column caption='地区1' datatype='string' name='[地区]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffff00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <size column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]' />
+              <color column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]' />
+              <text column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:地区:nk]' />
+              <text column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[pcto:sum:保费金额:qk:6]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6D8EFCAF-5C3D-49E7-ABBB-6CCC39331F7B}' />
+    </worksheet>
+    <worksheet name='吸烟人数统计'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='微软雅黑' fontsize='22'>各地区吸烟人数统计图</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='insurance.csv+ (多个连接)' name='federated.0o03kkp1jif1f910lz69y10qe9ww' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o03kkp1jif1f910lz69y10qe9ww'>
+            <column-instance column='[是否吸烟]' derivation='Count' name='[cnt:是否吸烟:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[地区]' derivation='None' name='[none:地区:nk]' pivot='key' type='nominal' />
+            <column-instance column='[是否吸烟]' derivation='None' name='[none:是否吸烟:nk]' pivot='key' type='nominal' />
+            <column caption='地区1' datatype='string' name='[地区]' role='dimension' type='nominal' />
+            <column caption='是否吸烟1' datatype='string' name='[是否吸烟]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[Action (地区)]'>
+            <groupfilter function='level-members' level='[地区]' user:ui-action-filter='[Action1_20CFE90687B04F10BD3510CB5E3F27CF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]'>
+            <groupfilter function='level-members' level='[none:是否吸烟:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]</column>
+            <column>[federated.0o03kkp1jif1f910lz69y10qe9ww].[Action (地区)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:地区:nk]' value='154' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='28' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='微软雅黑' />
+            <format attr='font-size' value='15' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffff00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' />
+              <text column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[cnt:是否吸烟:qk]' />
+              <text column='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0o03kkp1jif1f910lz69y10qe9ww].[cnt:是否吸烟:qk]</rows>
+        <cols>[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:地区:nk]</cols>
+      </table>
+      <simple-id uuid='{2172EEF0-813D-4E83-8D92-BF84D34C2364}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='仪表板'>
+      <style />
+      <size maxheight='900' maxwidth='1700' minheight='900' minwidth='1700' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='insurance.csv+ (多个连接)' name='federated.0o03kkp1jif1f910lz69y10qe9ww' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0o03kkp1jif1f910lz69y10qe9ww'>
+        <column-instance column='[是否吸烟]' derivation='None' name='[none:是否吸烟:nk]' pivot='key' type='nominal' />
+        <column caption='是否吸烟1' datatype='string' name='[是否吸烟]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='17' param='vert' type-v2='layout-flow' w='99058' x='471' y='889'>
+            <zone h='98222' id='10' param='horz' type-v2='layout-flow' w='99058' x='471' y='889'>
+              <zone h='98222' id='8' type-v2='layout-basic' w='89646' x='471' y='889'>
+                <zone h='37554' id='5' name='保费统计表' w='89646' x='471' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='60668' id='7' name='吸烟人数统计' w='45294' x='471' y='38443'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='60668' id='14' name='保费金额占比' w='44352' x='45765' y='38443'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='98222' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='9412' x='90117' y='889' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='14222' id='11' name='吸烟人数统计' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' type-v2='filter' w='9882' x='41471' y='45889' />
+        <zone h='9444' id='12' name='吸烟人数统计' pane-specification-id='2' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' type-v2='color' w='8235' x='41941' y='59222' />
+        <zone h='9778' id='15' name='保费金额占比' pane-specification-id='0' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]' type-v2='color' w='10000' x='79529' y='50222' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='26' param='vert' type-v2='layout-flow' w='99058' x='471' y='889'>
+                <zone fixed-size='280' h='37554' id='5' is-fixed='true' name='保费统计表' w='89646' x='471' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14222' id='11' mode='checkdropdown' name='吸烟人数统计' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' type-v2='filter' w='9882' x='41471' y='45889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='60668' id='7' is-fixed='true' name='吸烟人数统计' w='45294' x='471' y='38443'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9444' id='12' name='吸烟人数统计' pane-specification-id='2' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' type-v2='color' w='8235' x='41941' y='59222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='60668' id='14' is-fixed='true' name='保费金额占比' w='44352' x='45765' y='38443'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9778' id='15' name='保费金额占比' pane-specification-id='0' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]' type-v2='color' w='10000' x='79529' y='50222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8907ECE7-4C0B-466F-B9CB-89343A0ED2F2}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='保费统计表'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' type='filter' />
+            <card param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[Action (地区)]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:地区:nk]</field>
+            <field>[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:年龄:qk]</field>
+            <field>[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ACC47ED6-BB1C-4921-BB80-AD87C199A663}' />
+    </window>
+    <window class='worksheet' name='吸烟人数统计'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[Action (地区)]' type='filter' />
+            <card param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:是否吸烟:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o03kkp1jif1f910lz69y10qe9ww].[none:地区:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A9B7066F-AF87-4DE1-B906-CFB548F9CD38}' />
+    </window>
+    <window class='worksheet' name='保费金额占比'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o03kkp1jif1f910lz69y10qe9ww].[sum:保费金额:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A1EE0549-FC44-4AB2-BDF0-7C99BBEC3417}' />
+    </window>
+    <window class='dashboard' name='仪表板'>
+      <viewpoints>
+        <viewpoint name='保费统计表'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='保费金额占比'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='吸烟人数统计'>
+          <zoom type='fit-height' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{AB75B0FA-9859-417E-84D3-50D5FA0D0B9B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='仪表板' width='192'>
+      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
+      WZUIdshIccQAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='保费统计表' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAZUUlEQVR4nO3daW8beZ7Y8W8V7/s+RImHdVjWYbvdds+0B52e3fQuAgywyIPkLeR99CsJ
+      8izYALNBsNhFjs1c7tuy1dZlWdZJkRJP8SbrIFl54GmlPZrpnrZluWfr/wEMwxJF/kjzyyqS
+      Yv0lwzAMBMGk5Lc9gCC8TSIAwdREAIKpiQAEUxMBCKYmAhBMTQQgmJoIQDC1txLA97/3ZmAY
+      BuPx+Dt/bjQafe/5jUYj3uQ7fYZhYBhcwqzG+Wm+fb7ifco3y3rVF3hweEghv8dUZo5sNgNj
+      jWe7hzisMr2eys2bC5zVa2ysb+L2+ZjMTjMRC6MMepS3V+nEbuCXdPyWARtFhblUgHzhhGvX
+      rqFoOm67TK9dJV+FeMSDVavRtk9xe3bitWcfKm32ijWsYwt9tcfNxeuUTwo8OzjFbZeZWbxJ
+      2Oei1+3y7OsnJK7PIktO+idP0cKz+FE4KZW4di3DcGRDGvWplE/AHcXrtFPZXyd7729I+mwc
+      PltHd0Wp5PdZWFokEg5fwq0v/KEr2QL0+32O8nm6nTaDwQCLzYnDJtFXdDpnNVRNQx3JyGOV
+      YqXOcKijDkeEAwEGqgrAaDiiOxggA4qisbH2lMWleSrVMkGvl0qtQaNWJhxNkJ4IUq3Usbt9
+      5G7cIv9s7VKux2mxxlhrI7ncqN0zaq0eqqpgIBEKBVEGKsb4xSO5oigwNlA0lc2jGjfSQc7q
+      Zdx2D41Wm+ppnURqioDXTq1axReK8t79Ozz6fBWApmJQPdoimbnGzs72pcwvXHQlAbjdbrKZ
+      DA6bhD6ScVph/7CIw2HFbrcwNOx0mmXoKjijYZRen+FoSOekiDeZBAx0tU11HEQp7hCMRNC0
+      MXabDIwZqCN0ZfDSZSbS03jsEpJkZThULuV6uKx9tKGTRvOMsWHH53NxdlrG6nJRrZwRiYYA
+      g0GzyNAb43j/iHgsChJIAGjoQwmlp37rXGVmbiyAriLb3eiDDgCGMcYViOKxSbid7kuZ/9UZ
+      F3bFXuyiXfzaS9+/ktn+PBdm+/2fK90F6itDkhEfPcXJO7kssgRjSSIcDtGudbHbrNhlifD0
+      LMXTAobswC5LgIHL48M6Oia7MMvhUZ5sJspRoY7HE+Ta9Axqr8n2YeXFBUl2/F6ZaDRCr3aE
+      L5q9nCswlIlNRKnXmsheL7JsZW5hnu18GewO5Bc9Egj6GZ20mc5OcHh0TNAh01LB401xbSZL
+      q3LIae/FndrhdIPdQdTvoLDxKenl2wBYJQPZ4cFlHSI7Q5cz/ytSakd8/rTBO3fmKJ+cMjOV
+      ZGPzCfvVAYuz17hxfZax1uVXv33IX33019hkg8OdTRoKOG0W/MEwU6nElcw6Huu0Wn3arSbG
+      eMTUtWmeP91EsviZzESxYOF4fxuP20GxPUL6i/1t0PGQfLFCJp36zpNVTo7xxydxWt/eC16G
+      3qNQU0hPRL7rVOTzx2QymSub689iGPzmt78jN5GgbUjYLRamfDL/+ODFrlrE5+buz35OcXcT
+      dyjC3tNtbty5y+H6I2wRH40jBWvUy7/78P6VjKupAx6vPmGsqQQiEZKpDF+vfE5qIkYo5OKk
+      HaRZ2WMi6KBVb1z9q0Av9fYnN5PGhU0W39rkGoYBspX01Pc/sY2n0q985//DV3a+ueyLm9OX
+      v3+B1U06Gf7OXQaQfnx3fgAMEokkLreVh599hsPlxxaaZDod48b1RfzhCAG3Da/fz/7uPsnU
+      JIlICJfXi672sFldRCKBK514YWEByWJnamoKt9uF3+vC54ugtNuM7Q6SiTjq0MBjk65mF2hl
+      dY1379xCGmn8n//1L9y+/wGJkI/8/jantQ5DVcMTDrO0uMBY6THQFVYfPWXp1iIhn4fNp5sE
+      HHZaYzu5TJZB/YjtQgN5pJKbuU5cqrHRj5NxlCkOJnh3PsbG489p6C6m4x58E9fwO3/gVTXG
+      PHr0GJfTiqYb3L7zDvm9Z6yvrmC4A9y+9xG5hJvVz36DPTnL0kyaeuWUw8MjHG4bzbrG4p3b
+      +B3yH8yfw2XXefZ0D30Mt9+5zbBboaa4ODvd5dbtOwCvP/9lkWSsNgu6YeO99++jtCtIiRA+
+      twdPyEPhZMBQVTirlhkiMVBU2h2FQCRKwmFHS8gMh8MrG9fucGF3uPD5vAQCQfRBm+jUHEG/
+      hWeHTdL3gjQOT9H1Idrwip4DSIM6u4UzLJ0TUtNzHDz9mkokg9xrc1o/I+2W2T+1cntZ4nD/
+      GbaJWZwumf29XRazk/hjXja/OuH9d0I8Pe2SdtjpNqrM5KZoD3RSsQCN/WOsHhhJFSDGSanG
+      YGig1GQmRw4WZ3/Yo2u3WWJs8aD1K2jWCOPhkHq5iC8UozeG48M9POMgsjfK8OyUT+o1rqf8
+      PHueZ25hHlUpoGow6Ndemn+73MfVP2b+xjy7a+uoGPRrNfqOKJVKlb29fdK53GvPf5lmpqeR
+      ZZnUeIwsy4yGQxZuvoskSaQnp5BlmXv3P3zpZ+KRRca/P/0f25K+aUs3lwGwufxcS/sBuPNv
+      /hZZloneuIHFYgGu6FWgkSPA9akwNpuFwsEhWO1k0hMMxwbRsB9VlYjEQ0hAIBpH7zXpdnqE
+      wlHgxa7IZGoCfTjE7fHg97m5lsvh8ATIpVMM8OE0+qjDIbGQl5EBH/78Q8KBID1JprD39AfP
+      7AnG8FjGnBQKNJptNH0EzhDhYASfx8/PfnoTt8NGu1nhrDkgncngs40IJZNo+hiLxYnDbrkw
+      v8vlIOKGB58+xHC6qVfP8NptGHY3iUScmZlp7Bb5tee/TLIsv/S3xWpFkqSXvvbn/NxV+ma+
+      bzuf//d3friiN8KGI4mRrmKMNUayHZvNSafVwh9NELNZ0VMyhtZFGUE4mSaMwqCjMz83Q79R
+      YXA2IJDI0qjVmZy00qmreJ0Wal0FuVIi6LIwM79Mu1Eml3vxio/sdHFtbp5ptUmpd/HG+D6S
+      ZGCVYfnefaSRTLOrkJ1M0ByMsDVPOeuojJUhI32I1elhrPRwhL1M5abxSUMcUxH0oY7LYX9p
+      /lRSQhu7sUgdWn2FKbuMbHci9XScTtf55Ttec37hz/OX+yqQIFwC8ctwgqmJAARTEwEIpiYC
+      EExNBCCYmghAMLXz9wF6vd6VvmUtCD8G4n0AwdTELpBgaiIAwdREAIKpiQAEUxMBCKYmAhBM
+      TQQgmJoIQDA1EYBgaiIAwdREAIKpiQAEUxMBCKYmAhBMTQQgmJoIQDA1EYBgaj8ogEG3hTqE
+      /b297z/xeEir3X3Vuf7V0XWdtbU1Dg4O6HQ6PHz4EPX3yz+VSiVWV1dRVZWNjQ329/cplUoU
+      CgU6nQ6apl3JjPl8nrW1NRRF4fHjx5RKJeDFElcrKys0Gg2eP3/O2toa/X6fnZ2d84X9er0e
+      KysrnJ2dsbu7y8bGBv1+n1arRaFQuJL5X4Xl448//vjbX/j6y09Y3z/BOWzxf3/zGb5giGK5
+      TrmQ5/Gv/4G1spXK3mP29/dxR+J8+btf0dRkGoUdPl/ZJOK38LtPvkTrN/nP//W/c2PpNl6X
+      7S1dvR8PwzAIh8NsbGzQaDRYXFzk+fPnJJNJHj16RCKRoNVqMTk5yfb2Npqm0ev1aLfbJBKJ
+      KznArGEYdLtd8vk8sViMg4MDstks6+vrZDIZnj9/zvLyMgcHB8RiMVZXV8nlclitVra3t0ml
+      Uuzs7HDz5k2Ojo6YmJhgdXWVfr/P1NTUG5//VVy4VTvtBv3egC++fsrf/d19fv3P/8Ju/oTn
+      z7aZSE1y9yfv4fKGuLeQ5OGv/zcbJ3021tZfHBc+v8PRWY92t4s3GGNh6R2Sobe9vtWPg9Vq
+      ZX9/H0mSkCQJl8t1fthwu93O6ekpVquV9fV15ufnicfj9Pt9arUan3322ZXMeHp6CkAymaRU
+      KmG1vjhmgsvl4uDgAIfDgaIouFwufD4ficT/X/bIZrNxcHCA2+1G13UsFguHh4eMx2MqlcqV
+      zP8qLhwd2usPUjppcyM3wT//0ye8++HPWF/5grHFxdTMNF88/JxkPI7D7Wdm6V1G21tM5map
+      n+zgDcdwO5xEfHZamhWbUqXc6JMQEdDtdun1ethsNiKRCF999RUzMzMUi0VsNhu6rqNpGq1W
+      i1qtxuLiIqqqoqrqlewCjcdj8vk8kUgEj8eDYRjYbDY2NjZwOp1IkoTNZqNSqTA/P0+n06FU
+      KuFwOADweDzIsozNZuP4+Jhbt25htVrJ5XIcHh6+8flflTgqhPCdWq0WgcCfXuLIMAza7fZ3
+      nubHTAQgmJp4GVQwNRGAYGoiAMHURACCqYkABFMTAQimJgIQTE0EIJiaCEAwNRGAYGoiAMHU
+      RACCqYkABFMTAQimJgIQTE0EIJja+Uciv/l8qiCYyXkAmqaJCATTEbtAgqmJAARTEwEIpiYC
+      EExNBCCYmghAMDURgGBqIgDB1EQAgqmJAARTEwEIpiYCEExNBCCYmghAMDURgGBqIgDB1EQA
+      gqm9UgDfLI4sCH/pLiyT2u80aStjogE3pcoZyYk4mj6C0ZD9tU9h4i6FrS+48+5d/AE/stWO
+      pijYrTKSLFE9azORjCNL0hsbulAoUCwWCYVCXL9+nZWVFdxuN9lslgcPHrC8vEy5XGY0GhEK
+      hchkMufLeb4tmqaxtrZGt9slGAzS6/VIp9NkMhkODw/J5/PkcjnG4zHb29vEYrErn39jY4N6
+      vU4ul6Pb7VIqlfjoo4/Y3t6m1WrhcDjo9/uEQiF8Ph+Hh4dYrVbef/99qtUq+XweWZZxOBxU
+      KhWy2SyHh4f4/X7u3r37xud/FRcC+Md/+HsmFu6zVT8gEAmwtvYU2etn2CjiHp+BYw5t0OXZ
+      159geKJ0+hIH+WOWs1G6/S4Ou0xl7j535iYufdhv1rKNx+M8ffqUVCoFgMPhoNvtMhqNWF5e
+      Bl4s3KwoCqVSifF4zPz8/KXP80PY7XYmJiYol8vouo7VauX4+JhMJkMul6NSqRCLxdje3iYY
+      DL6V+WdmZmg0GiQSCaxWKz6fD3hx+/Z6PdxuNw6Hg2azSSgUQlEUPB4PAKFQiOfPn+P3+4lG
+      o+zv73N2dsYHH3zA5ubmG5/9VV3YBbr73k9Z/eoL1PEYu8OGYRicVU4o15okJyZeLIbs9jM/
+      k8EWnOZ463MWcykqupVxv0VrYOCRBmwfFnm2vXOpw0qSRCqVotvtsrS0RKVSodlsEo1GCQaD
+      lMtlqtUqtVqN5eVlAoEAHo+Hdrt9qXO8ina7zebmJul0mhs3bhCPx0kmkzSbTc7OzggEAiiK
+      gt1up1AosLS0dKXzG4bBr371K2ZnZ7FarRQKBdLpNM1mk2q1ysLCAp1Oh0QigcPhYH9/n+np
+      aXRdp9ls0ul0mJmZodVqMRwOyWazDIdD9vb2UBTljc//qs7XCVYUhfF4TKNWZjCyEAu6OSnV
+      mUxPUjkpYnf7CPvdnJbPCAR9OG0WdMOK2m/j8bgZaAZum0GxVCORiKEODRgNCQT8lz50u92m
+      2+0Si8XQdZ3hcEiv1yMWi1GpVJBlmXg8jq7rjEYjhsMhfv/lz/FD6LpOrVbDarXidDrp9/vE
+      43EGgwGyLGO325HlF49HiqLgcDjQNO3K5jcMg2q1ymg0Or9dXS4X29vbzM7OUi6XiUQi9Pt9
+      hsMh0WiUcrmMz+ejUCiQyWRoNBqEw2E6nQ6GYRCPx6lUKgQCAZxO5xud/1VdCEAQzES8DCqY
+      mghAMDURgGBqIgDB1EQAgqmJAARTEwEIpiYCEExNBCCYmghAMDURgGBqIgDB1EQAgqmJAART
+      EwEIpiYCEExNBCCY2vknwsShTgQzOg9AEMxI7AIJpiYCEExNBCCYmghAMDURgGBqIgDB1EQA
+      gqmJAARTEwEIpiYCEExNBCCYmghAMDURgGBqIgDB1EQAgqmJAART++EBGAbjsfgMjfCvw4V1
+      gr9tPB6fr1wIsPLoEfduz/PbT5/y1z9/74+e5hvl/W204BTpsPdSBlUUhY2NDTRNY2pqipOT
+      E6LRKLOzsxiGwS9/+Ut+8Ytf8PDhQ5LJJKqqMhwOCYVCpFKpt75QtqqqPHnyBE3TiMVilEol
+      5ubmSKVSPHnyhLOzM+bn53n+/Dkulwun03nl829tbdFut5menmZnZweXy8Xdu3fZ39+nXC7j
+      9/sxDIN+v8/y8jIrKytks1my2SyVSoXDw0NcLhfdbhdVVZmdnT3/2l/MQtm//Pv/gtpqkrr9
+      Ifm9XWSrA7deZ+RNsrexgtPtYGdzlY21R9xazHBaaZC9eY/y+kNOFDtJe5txaJpI/4hdaYr/
+      9B/+9rWH7PV6WCwWPB4P3W6XdDpNu93Gan0x/sbGBolEglKpRLfbRVEUhsMhiqLQ7XYxDIPp
+      6enXnuN1OBwO5ubm2NraotPp8MEHH7C2tkYqlULXde7du8fKygrBYJBiscjExMSVz7+4uMin
+      n36KJEnntzlwfqd3u90sLS3x6NEj9vb2ABgMBgCEw2H29vYYDofouo7T6aRarb50Pj9GFx66
+      7b4IH/5kmcppmWvL97CN+1h9Mf7jv/8Fuek55nOTTE0vMDcV4ei4iC8cxdIu0nPEsRk679z9
+      Ka38EZFMlqWlxUsZ8ps789zcHLIss7q6SiQSIZfLoSgKmqZRrVZRVZV0Os1gMODWrVu4XC7c
+      bjfNZvNS5ngd/X6fra0t7t+/j6Zp9Pt9JElCURRUVaXb7ZLJZM4f7d/m/IVCgfv376PrOpqm
+      cXp6yocffvjSgt1er5fp6Wmazeb51vbevXt0Oh1u376Nrus0Go3z8/mxuvCh+Eqlgt8pM5A9
+      HD39mnB6Hqc8JB6PUy0ecKZaCPm8SGMVn8/Dw0dPmF9a5mD7KZHJLFa1QaUv8+5ClpW1Hd5/
+      786lDKqqKltbWwSDQSRJolqtkslksFgsRKNR2u02Ho+Ho6MjLBYL6XSabreLpmmoqsrk5OSl
+      zPGqBoMBm5ubOJ3O812MpaUlWq0WFouFk5MT5ufnWVtbI5fLEQwGr3R+wzB4+vQp3W6X+fl5
+      9vb2SKVS56vWb21tMTMzQ7FYpNfrsbCwQLFYJBAIUCwWyWaz5PN5pqenqVar2O120uk0T548
+      IZVKkUwm3+j8r0ocFUL4ToZhIEnSd34f+M7T/JiJAARTE+8DCKYmAhBMTQQgmJoIQDA1EYBg
+      aiIAwdREAIKpiQAEUxMBCKYmAhBMTQQgmJoIQDA1EYBgaiIAwdREAIKpiQAEUzv/ULyu64jP
+      xghmcx7AaDRiPB6/zVkE4cqJXSDB1EQAgqmJAARTEwEIpiYCEExNBCCYmghAMDURgGBqIgDB
+      1EQAgqmJAARTEwEIpiYCEExNBCCYmghAMDURgGBqIgDB1Cwff/zxx/BiKdLv+0hku93GYZM4
+      OCoRCvq/98zHukJXHeGwfed63D9YrVbj2bNn+P1+7HY7+Xyek5MTbDYb+/v7aJrGYDCg1Woh
+      yzKSJL31tWoNw6BYLGKxWOj1emxvbxOJRLBYLBSLRQ4PDwmFQui6Tj6fR9O0K5+/0+lQq9Vw
+      uVysr68jSRJer5fxeMzu7i6hUIhOp0O9XsfhcLC+vo7dbsflctHv99nd3UWWZer1OoVCgWAw
+      yPb2NuPxGK/3chZMv2wXAvj64Sc8evQYbzTBlw9+Q707pHt2yuPVdf7nP/0PgrEYD379O05r
+      TQZKH5veYreqcVYukN/dZrdQY9yv8Whjh37pGf/t15u8s3Qdm/XyNjaSJOF2uzk+PiYej+P1
+      eqlWq4xGIwzDoFKpMBgM6Pf7tNtt4vH4H13N/iqNRiN2dnaw2Wzk83muX7/O7u4uiUQCm82G
+      ruv0+32Oj4+pVqvn/77K+avVKkdHRxiGgdvt5ujo6HxR8q2tLbLZLNVqlUKhQL/fJ5vNsrW1
+      RTqd5ujoiGAwSCQSQZIkut0ujUYDm83G1NTUW7/9/5QLU52edbhzLcgnv/2M8NxdTg63WX+y
+      zs/+6t+Sm51nYTrNZG4em9akVznmtxvHlA5WOTrI8/njTfLPNymddRn0esSTSRaX38HtuJwt
+      wHg8ZmdnB8MwePbsGU6nE+D8Bnc6nfh8Pmw2G/F4nMFgQL1e58svv7yUy38dVquVVCoFQDwe
+      Z3Nzk36/D4CmaRQKBRqNBmdnZ9RqNWKx2JXPPzU1hcViQZZlKpUKVuuL/7dAIEAwGARgcnIS
+      q9XK5OQkW1tb54t4J5NJ6vU6X331FaVSCYDp6WlGoxEPHjy4kvlfxYV7Ziwaw+G1c30pQ2Hz
+      Id5IiqDLitcuMxFys3VwSjQaRNZg5nqGowfPSbk14j/5G2zyCJs3SMDroVlvMPYmaK2u0lev
+      4Xa8/iZclmWuX7/O3t4eTqfzfIFpWZaZm5sjEAjwxRdf4PF4SCaTqKqKqqpomvbal/26VFXl
+      4OAAi8VCJpPBarUyOzvLyckJzWYTp9NJIpFgaWmJnZ0dksnk+SLZVzH/Nw8q9XqdWCyGYRjY
+      bDa2traIx+NUKhWOjo5QVZVKpUImk8HpdDI/P8/W1hbhcJjBYEAwGOT4+JhIJEKj0aDX6xEO
+      h9/4/K/qfJ1gRVHEUSGEC1qtFoFA4E9+3zAMOp0Ofv/3Pyf8MRIBCKb243xmIghXRAQgmJoI
+      QDA1EYBgaiIAwdREAIKpiQAEUxMBCKYmAhBMTQQgmJoIQDA1EYBgaiIAwdREAIKpiQAEUxMB
+      CKb2/wCsDp8b2j0m5QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='保费金额占比' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='吸烟人数统计' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
